@@ -1,0 +1,40 @@
+.devtool.language-switch {
+  position: relative;
+  width: 90px;
+  height: 50px;
+  background-color: var(--primary-light);
+  border-radius: 30px;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+.devtool.language-switch-toggle {
+  position: absolute;
+  left: 5px; /* Correspond à la marge extérieure */
+  top: 5px; /* Correspond à la marge extérieure */
+  width: calc(50% - 5px); /* Soustrait la marge */
+  height: calc(100% - 10px); /* Soustrait les marges haut et bas */
+  background-color: white;
+  border-radius: 50%; /* Cercle parfait */
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.devtool.language-switch-toggle.switched {
+  transform: translateX(100%);
+}
+
+.devtool.flag {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border-radius: 4px;
+}

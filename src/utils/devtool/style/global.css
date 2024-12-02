@@ -1,0 +1,118 @@
+@import "./colors.css";
+@import "./font.css";
+@import "./buttons.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.devtool.navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: var(--primary);
+  box-sizing: border-box;
+  height: 70px;
+  padding: 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.devtool.navcontent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.devtool.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.devtool.navbar ul li {
+  display: flex;
+  align-items: center;
+}
+
+.devtool.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: var(--primary-dark-text);
+  padding: 20px;
+}
+
+.devtool.navbar ul li.active a {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.devtool.navbar ul li:not(:last-child)::after {
+  content: "\0000B7";
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.devtool.undis {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .devtool.navcontent {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: grey;
+  }
+  .devtool.navcontent.toggle {
+    display: flex;
+  }
+  .devtool.toggleBtn {
+    display: block !important;
+    height: 70px;
+    line-height: 75px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0 10px;
+    border: none;
+    content: "menu";
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 1.6em;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  .devtool.flex.column-800 {
+    flex-direction: column;
+  }
+  .devtool.navbar .logo {
+    display: block;
+    font-size: 1.1em;
+    color: var(--primary-dark-text);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .devtool.navbar ul li.active {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .devtool.navbar ul li a {
+    padding: 20px 10px;
+  }
+}
+/********** global devtool rules ***********/
+.devtool.flex {
+  display: flex;
+}
+.devtool.centerX.betY {
+  justify-content: space-between;
+  align-items: center;
+}
