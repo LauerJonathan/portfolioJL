@@ -1,13 +1,12 @@
 import "./lastDisplayer.css";
 import hrnetIMG from "../../assets/projects/hrnet.png";
-import lppIMG from "../../assets/lesPtitsPlats.webp";
+import lppIMG from "../../assets/projects/petitsplats.webp";
 import feIMG from "../../assets/projects/fisheyes.png";
-import { LangContext } from "../../utils/context";
-import { useContext } from "react";
+import { useLanguage } from "../../utils/context/LanguageContext";
 import { Link } from "react-router-dom";
 
 const LastDisplayer = () => {
-  const { lang } = useContext(LangContext);
+  const { lang } = useLanguage;
   return (
     <section className="lastDisplayerCont">
       <h1>
@@ -33,7 +32,7 @@ const LastDisplayer = () => {
           <img src={feIMG} alt="project img" />
         </a>
       </div>
-      <div className="seemore">
+      <div className="seemore adlam">
         <Link to="./project">
           {lang === "en" ? "See more..." : "En voir plus..."}
         </Link>

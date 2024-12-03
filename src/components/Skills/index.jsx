@@ -12,7 +12,7 @@ import { useLanguage } from "../../utils/context/LanguageContext";
 import "./skills.css";
 
 const Skills = () => {
-  const { lang } = useLanguage();
+  const { language } = useLanguage();
   const hskills = [
     {
       subject: "HTML, CSS",
@@ -63,7 +63,7 @@ const Skills = () => {
     },
 
     {
-      subject: lang === "en" ? "agility" : "agilité",
+      subject: language === "en" ? "agility" : "agilité",
       A: 98,
       fullMark: 100,
     },
@@ -125,7 +125,7 @@ const Skills = () => {
   ];
   return (
     <section className="skillsSec">
-      <h1>{lang === "en" ? "Present my skills" : "Mon expertise"}</h1>
+      <h1>{language === "en" ? "Present my skills" : "Mon expertise"}</h1>
       <div className="chartsContainer">
         <ResponsiveContainer>
           <RadarChart cx="50%" cy="50%" outerRadius="55%" data={hskills}>
@@ -140,11 +140,11 @@ const Skills = () => {
             />
           </RadarChart>
           <div className="label">
-            {lang === "en" ? "Tech used" : "Mes techno'"}
+            {language === "en" ? "Tech used" : "Mes techno'"}
           </div>
         </ResponsiveContainer>
         <ResponsiveContainer>
-          <div className="label">{lang === "en" ? "Methods" : "Méthodes"}</div>
+          <div className="label">{language === "en" ? "Methods" : "Méthodes"}</div>
           <RadarChart cx="50%" cy="50%" outerRadius="55%" data={method}>
             <PolarGrid />
             <PolarAngleAxis dataKey="subject" tick={{ fill: "#1E1D32" }} />

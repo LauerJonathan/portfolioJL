@@ -130,9 +130,15 @@ body {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  top: 0;
+  top: 0 !important;
   padding-top: 200px !important;
   overflow: scroll;
+}
+.test {
+  background-color: green !important;
+}
+.test2 {
+  background-color: red !important;
 }
 .devtool.flex {
   display: flex;
@@ -148,6 +154,15 @@ body {
   bottom: 10px;
   left: 0;
   color: var(--primary-dark-text);
+}
+.devtool.flex.column {
+  flex-direction: column;
+}
+.devtool.startX.betY {
+  height: calc(100% - 280px);
+  flex-grow: 1; /* Prend toute la place restante */
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .devtool.centerX {
   justify-content: center;
@@ -170,4 +185,9 @@ body {
 }
 .pointerEventOff {
   pointer-events: none;
+}
+
+.wh-100 {
+  width: 100vw;
+  height: 100% !important;
 }

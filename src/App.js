@@ -11,8 +11,9 @@ import { LanguageProvider } from "./utils/context/LanguageContext";
 
 // Page Components
 import Home from "./pages/home";
-const Contact = () => <div>Contact Us</div>;
-const Projects = () => <div>Our Projects</div>;
+import Contact from "./pages/Contact/Contact";
+import Resume from "./pages/Resume";
+import Projects from "./pages/Project";
 
 // Main App Component
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/resume" element={<Resume />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

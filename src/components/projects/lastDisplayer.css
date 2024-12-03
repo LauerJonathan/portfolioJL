@@ -1,3 +1,7 @@
+.lastDisplayerCont {
+  margin-top: 80px;
+}
+
 .lastDisplayerCont h1 {
   font-size: 2em;
   width: 100%;
@@ -13,11 +17,12 @@
 }
 
 .lastDisplayerCont .seemore a {
-  background-color: var(--primaryClear);
+  background-color: var(--primary-light);
   padding: 20px 30px;
   border-radius: 20px;
   border: 2px solid var(--primary);
   transition: 500ms;
+  color: var(--primary-text)
 }
 
 .lastDisplayerCont .seemore a:hover {

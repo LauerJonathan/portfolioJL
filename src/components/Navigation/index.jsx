@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { Switch } from "../../components/Buttons/Switch";
 
 import enflag from "../../assets/media/switch/enflag.webp";
@@ -11,6 +12,8 @@ import { useLanguage, useTheme } from "../../utils/context/LanguageContext";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
+  const location = useLocation();
+  const page = location.pathname.substring(1);
   const { language, toggleLanguage } = useLanguage();
   const { theme, toggleTheme } = useTheme();
   const state = {
@@ -28,37 +31,37 @@ const Navigation = () => {
     en: {
       Home: {
         path: "/",
-        active: true,
+        active: page === "" && true,
       },
       Resume: {
         path: "/resume",
-        active: false,
+        active: page === "resume" && true,
       },
       Projects: {
         path: "/projects",
-        active: false,
+        active: page === "projects" && true,
       },
       Contact: {
         path: "/contact",
-        active: false,
+        active: page === "contact" && true,
       },
     },
     fr: {
       Accueil: {
         path: "/",
-        active: true,
+        active: page === "" && true,
       },
       CV: {
         path: "/resume",
-        active: false,
+        active: page === "resume" && true,
       },
       Projets: {
         path: "/projects",
-        active: false,
+        active: page === "projects" && true,
       },
       Contact: {
         path: "/contact",
-        active: false,
+        active: page === "contact" && true,
       },
     },
   };

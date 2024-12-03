@@ -1,0 +1,61 @@
+input::placeholder,
+textarea::placeholder {
+  color: var(--primary-light);
+  opacity: 1;
+}
+
+.content form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.content h1 {
+  font-size: 3em;
+  margin: 20px 0 30px 0;
+  color: var(--primary);
+}
+
+.content form button {
+  display: flex;
+  margin: 30px 40px;
+}
+
+.content form > *:not(button):not(h1) {
+  width: 70%;
+  max-width: 500px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid var(--primary);
+  background-color: var(--primary-text);
+}
+
+.content form textarea {
+  height: 150px !important;
+}
+
+@media only screen and (max-width: 700px) {
+  .content form h1 {
+    font-size: 2em;
+    margin: 20px 0 40px 0;
+  }
+  .content form > *:not(button):not(h1) {
+    width: 80% !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content form > *:not(button):not(h1) {
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .content {
+    width: 95%;
+  }
+}
