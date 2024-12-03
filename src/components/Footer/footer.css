@@ -1,0 +1,18 @@
+footer {
+  background-color: red;
+  width: 100vw;
+  height: 50vh;
+  background: url("../../assets/media/background/moutains-front.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+@media only screen and (min-width: 1300px) {
+  footer {
+    transform: translateY(10vh);
+  }
+  .devtool.footer .right {
+    transform: translateY(-10vh);
+  }
+}

@@ -8,8 +8,6 @@ import sun from "../../assets/media/switch/sun.webp";
 
 import { useLanguage, useTheme } from "../../utils/context/LanguageContext";
 
-import "./index.css";
-
 import { Link } from "react-router-dom";
 
 const Navigation = () => {

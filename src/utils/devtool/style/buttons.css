@@ -38,3 +38,48 @@
   object-fit: cover;
   border-radius: 4px;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.link {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none !important;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+.link span,
+.link i {
+  position: relative;
+}
+.link i {
+  margin-left: 0.5em;
+}
+.link .color {
+  width: 2em;
+  height: 2em;
+  border-radius: 2em;
+  background-color: var(--primary-light);
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  left: -0.65em;
+}
+
+@media only screen and (max-width: 700px) {
+  .link {
+    font-size: 1rem;
+  }
+}

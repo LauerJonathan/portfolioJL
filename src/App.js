@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 import "./utils/devtool/style/global.css";
 import "./utils/style/app.css";
@@ -9,7 +10,7 @@ import "./utils/style/app.css";
 import { LanguageProvider } from "./utils/context/LanguageContext";
 
 // Page Components
-import Home from "./context/home";
+import Home from "./pages/home";
 const Contact = () => <div>Contact Us</div>;
 const Projects = () => <div>Our Projects</div>;
 
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
+      <Footer />
     </LanguageProvider>
   );
 };
