@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Navigation from "./components/Navigation";
 
 import "./utils/devtool/style/global.css";
+import "./utils/style/app.css";
 
 // import context provider
 import { LanguageProvider } from "./utils/context/LanguageContext";
@@ -17,13 +18,13 @@ const App = () => {
   return (
     <LanguageProvider>
       <Router>
-          <Navigation />
+        <Navigation />
 
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </Router>
     </LanguageProvider>
   );

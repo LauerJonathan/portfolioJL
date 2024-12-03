@@ -8,15 +8,17 @@ const Home = () => {
 
   return (
     <section>
-      {<h1>
-        {theme === "moon"
-          ? language == "en"
-            ? "Good evening"
-            : "Bonsoir"
-          : language == "en"
-          ? "Good morning"
-          : "Bonjour"}
-      </h1>}
+      {
+        <h1>
+          {theme === "moon"
+            ? language == "en"
+              ? "Good evening"
+              : "Bonsoir"
+            : language == "en"
+            ? "Good morning"
+            : "Bonjour"}
+        </h1>
+      }
     </section>
   );
 };

@@ -1,0 +1,8 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
