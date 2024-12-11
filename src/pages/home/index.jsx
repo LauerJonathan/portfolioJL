@@ -14,7 +14,7 @@ const Home = () => {
   const [AboutMe, setAbout] = useState(AboutMeContent.en);
 
   useEffect(() => {
-    language === "en"
+    language === "en" 
       ? setAbout(AboutMeContent.en)
       : setAbout(AboutMeContent.fr);
   }, [language]);
