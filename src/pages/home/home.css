@@ -63,7 +63,7 @@
     align-items: center;
   }
   .aboutMe h1 {
-    font-size: 1.5em;
+    font-size: 1.5em !important;
     margin-bottom: 10px;
     text-align: center;
   }
@@ -75,6 +75,6 @@
     top: -120px;
   }
   .aboutMe h1 {
-    font-size: 1.3em;
+    font-size: 1.3em !important;
   }
 }

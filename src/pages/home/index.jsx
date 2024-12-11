@@ -25,7 +25,7 @@ const Home = () => {
         <div className="aboutMe">
           <img src={bitmoji} alt="bitmoji" />
           <div>
-            <h1>
+            <h1 className="adlam">
               {AboutMe.title}
               <span>{AboutMe.quote}</span>
             </h1>

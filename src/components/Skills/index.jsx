@@ -125,7 +125,9 @@ const Skills = () => {
   ];
   return (
     <section className="skillsSec">
-      <h1>{language === "en" ? "Present my skills" : "Mon expertise"}</h1>
+      <h1 className="adlam">
+        {language === "en" ? "Present my skills" : "Mon expertise"}
+      </h1>
       <div className="chartsContainer">
         <ResponsiveContainer>
           <RadarChart cx="50%" cy="50%" outerRadius="55%" data={hskills}>
@@ -144,7 +146,9 @@ const Skills = () => {
           </div>
         </ResponsiveContainer>
         <ResponsiveContainer>
-          <div className="label">{language === "en" ? "Methods" : "Méthodes"}</div>
+          <div className="label">
+            {language === "en" ? "Methods" : "Méthodes"}
+          </div>
           <RadarChart cx="50%" cy="50%" outerRadius="55%" data={method}>
             <PolarGrid />
             <PolarAngleAxis dataKey="subject" tick={{ fill: "#1E1D32" }} />

@@ -16,9 +16,9 @@ const Projects = () => {
 
   return (
     <>
-      <section className="devtool flex centerX container w-100">
+      <section className="devtool flex centerX container w-100 prj">
         <section className="content">
-          <h1>
+          <h1 className="adlam">
             {language === "en"
               ? "My work in few projects"
               : "Mon travail en quelques projets : "}

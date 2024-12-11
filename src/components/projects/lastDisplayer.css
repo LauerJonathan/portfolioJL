@@ -22,7 +22,7 @@
   border-radius: 20px;
   border: 2px solid var(--primary);
   transition: 500ms;
-  color: var(--primary-text)
+  color: var(--primary-text);
 }
 
 .lastDisplayerCont .seemore a:hover {
@@ -79,7 +79,7 @@
     gap: 40px;
   }
   .lastDisplayerCont h1 {
-    font-size: 1.6em;
+    font-size: 1.6em !important;
     text-align: center;
     margin: 30px 0;
   }
@@ -91,7 +91,7 @@
 
 @media only screen and (max-width: 600px) {
   .lastDisplayerCont h1 {
-    font-size: 1.1em;
+    font-size: 1.2em !important;
   }
   .lastDisplayer {
     padding: 0;

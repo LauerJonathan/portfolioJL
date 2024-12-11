@@ -82,7 +82,7 @@ const Contact = () => {
           {/* Premier bouton */}
           <button
             ref={linkRef1}
-            className="link"
+            className="link adlam"
             onClick={() => {
               setOpenState(!isOpen);
             }}>
@@ -95,7 +95,7 @@ const Contact = () => {
           {/* Deuxième bouton */}
 
           <Link to="/contact">
-            <button ref={linkRef2} className="link">
+            <button ref={linkRef2} className="link adlam">
               <div ref={pinkRef2} className="color"></div>
               <span className="whitetxt">
                 {lang === "en" ? "CONTACT ME" : "CONTACTEZ MOI"}

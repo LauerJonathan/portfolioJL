@@ -9,7 +9,7 @@ const LastDisplayer = () => {
   const { lang } = useLanguage;
   return (
     <section className="lastDisplayerCont">
-      <h1>
+      <h1 className="adlam">
         {lang === "en"
           ? "Let's talk about ⸱⸱⸱ my lastest projects"
           : "Parlons de mes derniers projets"}
