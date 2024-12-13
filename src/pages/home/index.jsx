@@ -1,4 +1,4 @@
-import { useLanguage, useTheme } from "../../utils/context/LanguageContext";
+import { useLanguage } from "../../utils/context/LanguageContext";
 import "./home.css";
 import bitmoji from "../../assets/media/bitmoji/bitmoji.svg";
 import { AboutMeContent } from "../../utils/lang/home";
