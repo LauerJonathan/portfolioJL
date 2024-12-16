@@ -8,7 +8,7 @@ import fisheyes from "../../assets/projects/fisheyes.png";
 
 const projects = {
   en: [
-    /* {
+    {
       title: "DevTool",
       tags: [
         "React Developer",
@@ -19,10 +19,10 @@ const projects = {
         "State Management",
       ],
       img: devtool,
-      link: "https://lauerjonathan.github.io/hrnet/",
+      link: "https://lauerjonathan.github.io/devtools/",
       description:
         "This project started from a simple observation: for accessibility reasons, the choice of display colors and contrast is crucial. A web application that generates CSS files with primary and secondary colors, as well as some shades, and ready-to-use style files to optimize development.",
-    }, */
+    },
     {
       title: "HrNet",
       tags: [
@@ -133,7 +133,7 @@ const projects = {
         "Gestion d'état",
       ],
       img: devtool,
-      link: "https://lauerjonathan.github.io/hrnet/",
+      link: "https://lauerjonathan.github.io/devtools/",
       description:
         "Ce projet est partit d'un constat simple : pour des soucis d'accéssibilité, le choix des couleurs d'affichage et de contraste est primordial. Une application WEB qui génère des fichiers CSS avec les couleurs primaires et secondaires ainsi que quelques nuances, et des fichiers de style prêt à l'emploi pour optimiser le developpement.",
     },
