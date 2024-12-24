@@ -10,12 +10,23 @@ import folder from "../../assets/media/folder.webp";
 const projects = {
   en: [
     {
-      title: "backend",
-      tags: ["folder", "backend", "fullstack"],
+      title: "Backend",
+      folder: true,
+      tags: [
+        "Fullstack / Backend",
+        "API Design",
+        "Data Management",
+        "Software Engineering",
+        "RESTful APIs",
+        "Node.js",
+        "Express.js",
+        ,
+        "Project Management",
+      ],
       img: folder,
-      link: "https://lauerjonathan.github.io/devtools/",
+      link: "https://jonathanlauer.fr/folder/backend",
       description:
-        "This project started from a simple observation: for accessibility reasons, the choice of display colors and contrast is crucial. A web application that generates CSS files with primary and secondary colors, as well as some shades, and ready-to-use style files to optimize development.",
+        "This folder contains all the fullstack and backend projects I have completed. From API development to data management, including front-end integration in fullstack projects.",
     },
     {
       title: "DevTool",
@@ -132,12 +143,22 @@ const projects = {
 
   fr: [
     {
-      title: "backend",
-      tags: ["folder", "backend", "fullstack"],
+      title: "Backend",
+      folder: true,
+      tags: [
+        "Fullstack / Backend",
+        "Conception d'API",
+        "Gestion des Données",
+        "Ingénierie Logicielle",
+        "APIs RESTful",
+        "Node.js",
+        "Express.js",
+        "Gestion de Projet",
+      ],
       img: folder,
-      link: "https://lauerjonathan.github.io/devtools/",
+      link: "https://jonathanlauer.fr/folder/backend",
       description:
-        "This project started from a simple observation: for accessibility reasons, the choice of display colors and contrast is crucial. A web application that generates CSS files with primary and secondary colors, as well as some shades, and ready-to-use style files to optimize development.",
+        "Ce dossier regroupe l'ensemble des projets fullstack et backend que j'ai réalisés. De la création d'API à la gestion des données, en passant par l'intégration front-end dans les projets fullstack.",
     },
     {
       title: "DevTool",
@@ -166,7 +187,7 @@ const projects = {
         "Gestion d'état",
       ],
       img: hrnet,
-      link: "https://www.google.fr",
+      link: "https://lauerjonathan.github.io/hrnet/",
       description:
         "Dans ce projet, j'ai participé à la conversion d'une application jQuery vers React. Ma mission principale a été de refondre les pages clés de l'application en remplaçant les plugins jQuery par des composants React. La documentation du composant converti a été une étape importante du travail. Cela comprendra la rédaction de documents techniques détaillant l'architecture du composant, son fonctionnement, et les raisons de sa conception",
     },

@@ -53,6 +53,10 @@
   object-position: top, center;
 }
 
+.prjContainer img.objectSizer {
+  object-fit: scale-down;
+}
+
 @media only screen and (max-width: 1500px) {
   .prjContainer .card {
     width: calc(100% / 2 - 7px);

@@ -4,6 +4,7 @@ import { useLanguage } from "../../utils/context/LanguageContext";
 import "./project.css";
 
 import { projects } from "../../utils/data/projects";
+import { Link, Links } from "react-router-dom";
 
 const Projects = () => {
   const { language } = useLanguage();
@@ -25,13 +26,17 @@ const Projects = () => {
           </h1>
           <div className="prjContainer">
             {prjList.map((elmt, index) => {
-              return (
+              return !elmt.folder ? (
                 <a
                   href={elmt.link}
                   target="_blank"
                   key={index}
                   className="card">
-                  <img src={elmt.img} alt="image du projet" />
+                  <img
+                    src={elmt.img}
+                    alt="image du projet"
+                    className={elmt.folder && "objectSizer"}
+                  />
                   <div className="devtool flex column startX betY">
                     <div>
                       <h2 key={index}>{elmt.title}</h2>
@@ -46,6 +51,27 @@ const Projects = () => {
                     </div>
                   </div>
                 </a>
+              ) : (
+                <Link to="../folder/backend" className="card">
+                  <img
+                    src={elmt.img}
+                    alt="image du projet"
+                    className={elmt.folder && "objectSizer"}
+                  />
+                  <div className="devtool flex column startX betY">
+                    <div>
+                      <h2 key={index}>{elmt.title}</h2>
+                      <p>{elmt.description}</p>
+                    </div>
+                    <div>
+                      <ul>
+                        {elmt.tags.map((elmt2, index2) => {
+                          return <li key={index2}>{elmt2}</li>;
+                        })}
+                      </ul>
+                    </div>
+                  </div>
+                </Link>
               );
             })}
           </div>
