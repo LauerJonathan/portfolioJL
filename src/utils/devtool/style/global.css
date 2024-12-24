@@ -143,6 +143,12 @@ body {
 .devtool.flex {
   display: flex;
 }
+.devtool.gap20 {
+  gap: 20px;
+}
+.devtool.wrap {
+  flex-wrap: wrap;
+}
 .devtool.fixed.bt0lft0 {
   position: absolute;
   bottom: 0;
@@ -190,4 +196,26 @@ body {
 .wh-100 {
   width: 100vw;
   height: 100% !important;
+}
+
+.devtool.pos-relative {
+  position: relative;
+}
+
+.devtool.pos-absolute {
+  position: absolute;
+}
+
+.devtool.pos00 {
+  top: 0;
+  left: 0;
+}
+
+.devtool.pos01 {
+  bottom: 0;
+  left: 0;
+}
+
+.devtool.d-blc {
+  display: block;
 }

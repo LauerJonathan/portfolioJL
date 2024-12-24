@@ -1,0 +1,27 @@
+.folderCards {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  min-width: 190px;
+  min-height: 190px;
+  border: 10px solid white;
+  text-decoration: none;
+  color: white;
+}
+
+.folderCards .typeDescription {
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--primary-text);
+  padding: 5px 10px;
+  font-size: 0.6em;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.folderCards.backend {
+  background-image: url("../../assets/media/backendIMG.webp");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}

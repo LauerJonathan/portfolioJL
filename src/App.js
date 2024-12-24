@@ -14,6 +14,7 @@ import Home from "./pages/home";
 import Contact from "./pages/Contact/Contact";
 import Resume from "./pages/Resume";
 import Projects from "./pages/Project";
+import Folder from "./pages/Folder";
 
 // Main App Component
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/resume" element={<Resume />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/folder/:type" element={<Folder />} />
         </Routes>
       </Router>
       <Footer />

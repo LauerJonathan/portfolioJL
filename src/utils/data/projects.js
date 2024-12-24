@@ -5,9 +5,18 @@ import ohMyFood from "../../assets/projects/ohMyFood.png";
 import booki from "../../assets/projects/booki.png";
 import gameon from "../../assets/projects/gameon.png";
 import fisheyes from "../../assets/projects/fisheyes.png";
+import folder from "../../assets/media/folder.webp";
 
 const projects = {
   en: [
+    {
+      title: "backend",
+      tags: ["folder", "backend", "fullstack"],
+      img: folder,
+      link: "https://lauerjonathan.github.io/devtools/",
+      description:
+        "This project started from a simple observation: for accessibility reasons, the choice of display colors and contrast is crucial. A web application that generates CSS files with primary and secondary colors, as well as some shades, and ready-to-use style files to optimize development.",
+    },
     {
       title: "DevTool",
       tags: [
@@ -122,6 +131,14 @@ const projects = {
   ],
 
   fr: [
+    {
+      title: "backend",
+      tags: ["folder", "backend", "fullstack"],
+      img: folder,
+      link: "https://lauerjonathan.github.io/devtools/",
+      description:
+        "This project started from a simple observation: for accessibility reasons, the choice of display colors and contrast is crucial. A web application that generates CSS files with primary and secondary colors, as well as some shades, and ready-to-use style files to optimize development.",
+    },
     {
       title: "DevTool",
       tags: [

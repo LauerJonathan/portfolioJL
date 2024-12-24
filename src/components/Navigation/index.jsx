@@ -39,7 +39,7 @@ const Navigation = () => {
       },
       Projects: {
         path: "/projects",
-        active: page === "projects" && true,
+        active: page === "projects" || page.split("/")[0] === "folder",
       },
       Contact: {
         path: "/contact",
@@ -55,9 +55,9 @@ const Navigation = () => {
         path: "/resume",
         active: page === "resume" && true,
       },
-      Projets: {
+      Projects: {
         path: "/projects",
-        active: page === "projects" && true,
+        active: page === "projects" || page.split("/")[0] === "folder",
       },
       Contact: {
         path: "/contact",
