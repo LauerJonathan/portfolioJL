@@ -9,9 +9,18 @@
   color: white;
 }
 
+.folderCards h2 {
+  background-color: rgba(29, 22, 52, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  text-align: center;
+}
+
 .folderCards .typeDescription {
   width: 100%;
-  background-color: var(--primary);
+  background-color: rgba(29, 22, 52, 0.6);
+  backdrop-filter: blur(10px);
   color: var(--primary-text);
   padding: 5px 10px;
   font-size: 0.6em;
@@ -21,6 +30,13 @@
 
 .folderCards.backend {
   background-image: url("../../assets/media/backendIMG.webp");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.folderCards.fullstack {
+  background-image: url("../../assets/media/fullstackIMG.webp");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
