@@ -33,7 +33,7 @@ const LastDisplayer = () => {
         </a>
       </div>
       <div className="seemore adlam">
-        <Link to="./project">
+        <Link to="./projects">
           {lang === "en" ? "See more..." : "En voir plus..."}
         </Link>
       </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Switch } from "../../components/Buttons/Switch";
 
@@ -65,6 +65,9 @@ const Navigation = () => {
       },
     },
   };
+  useEffect(() => {
+    setToggle(false);
+  }, [location]);
   return (
     <nav className="devtool navbar">
       <div
