@@ -1,13 +1,14 @@
 import { useContext, useEffect, useState, useRef } from "react";
 import { useLanguage } from "../../utils/context/LanguageContext";
 
+import cvfr from "../../assets/cv/french.pdf";
+import cvEn from "../../assets/cv/english.pdf";
+
 import gsap from "gsap";
 import "./resume.css";
 import Skills from "../../components/Skills";
 
 import bitmoji from "../../assets/media/bitmoji/bitmoji2.png";
-// import cv from "../../assets/cv/french.pdf";
-// import cvEn from "../../assets/cv/english.pdf";
 
 import { D38038, D31114 } from "../../utils/data/diploma";
 import { mooc } from "../../utils/data/resume";
@@ -19,6 +20,7 @@ const Resume = () => {
 
   const [d38038, setData38038] = useState(D38038.en);
   const [d31114, setData31114] = useState(D31114.en);
+  const [cv, setCV] = useState(cvEn);
 
   const [moocData, setMoocData] = useState(mooc.en);
 
@@ -27,6 +29,8 @@ const Resume = () => {
     language === "en" ? setData38038(D38038.en) : setData38038(D38038.fr);
     language === "en" ? setData31114(D31114.en) : setData31114(D31114.fr);
     language === "en" ? setMoocData(mooc.en) : setMoocData(mooc.fr);
+    language === "en" ? setCV(cvEn) : setCV(cvfr);
+
     // Création de la timeline GSAP pour les animations des deux boutons
     const hoverTL1 = gsap.timeline({ paused: true });
 
@@ -73,7 +77,7 @@ const Resume = () => {
                   ? "Discover my resume and expertise in HTML, CSS, JS, React, ..."
                   : "Découvrez mon CV et mon expertise en HTML, CSS, JS React, ..."}
                 <a
-                  href={language === "en" ? "www.google.fr" : "www.google.fr"}
+                  href={cv}
                   ref={linkRef}
                   className="link"
                   type="submit"
