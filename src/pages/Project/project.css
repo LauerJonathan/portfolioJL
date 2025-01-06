@@ -51,6 +51,7 @@
   height: 280px;
   object-fit: fill;
   object-position: top, center;
+  border-radius: 7px;
 }
 
 .prjContainer img.objectSizer {

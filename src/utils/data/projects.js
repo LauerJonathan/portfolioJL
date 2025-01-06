@@ -6,6 +6,7 @@ import booki from "../../assets/projects/booki.png";
 import gameon from "../../assets/projects/gameon.png";
 import fisheyes from "../../assets/projects/fisheyes.png";
 import folder from "../../assets/media/folder.webp";
+import hos from "../../assets/projects/hos.png";
 
 const projects = {
   en: [
@@ -27,6 +28,25 @@ const projects = {
       link: "https://jonathanlauer.fr/folder/backend",
       description:
         "This folder contains all the fullstack and backend projects I have completed. From API development to data management, including front-end integration in fullstack projects.",
+    },
+    {
+      title: "Hos-Pharmacie",
+      folder: false,
+      tags: [
+        "Fullstack",
+        "API Design",
+        "Data Management",
+        "Software Engineering",
+        "RESTful APIs",
+        "Node.js",
+        "Express.js",
+        "vite",
+        "Project Management",
+      ],
+      img: hos,
+      link: "https://jonathanlauer.fr/hosPharmacie/login",
+      description:
+        "This project was developed to streamline the management of hospital pharmacy stocks by providing a dashboard that displays alerts for expired, near-expired, and low-stock medications. Pharmacists can manage inventory by removing expired items, adjusting quantities, or adding new lots to maintain optimal stock levels.",
     },
     {
       title: "DevTool",
@@ -159,6 +179,25 @@ const projects = {
       link: "https://jonathanlauer.fr/folder/backend",
       description:
         "Ce dossier regroupe l'ensemble des projets fullstack et backend que j'ai réalisés. De la création d'API à la gestion des données, en passant par l'intégration front-end dans les projets fullstack.",
+    },
+    {
+      title: "Hos-Pharmacie",
+      folder: false,
+      tags: [
+        "Fullstack",
+        "API Design",
+        "Data Management",
+        "Software Engineering",
+        "RESTful APIs",
+        "Node.js",
+        "Express.js",
+        "vite",
+        "Project Management",
+      ],
+      img: hos,
+      link: "https://jonathanlauer.fr/hosPharmacie/login",
+      description:
+        "Ce projet a été développé pour simplifier la gestion des stocks de pharmacie hospitalière en offrant un tableau de bord affichant des alertes pour les médicaments périmés, presque périmés et en faible quantité. Les pharmaciens peuvent gérer les stocks en supprimant les produits périmés, ajustant les quantités ou ajoutant de nouveaux lots pour maintenir des niveaux de stock optimaux.",
     },
     {
       title: "DevTool",
