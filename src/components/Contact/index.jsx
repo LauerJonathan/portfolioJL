@@ -6,7 +6,7 @@ import Modal from "../ChoiceModal";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
-  const { lang } = useLanguage();
+  const { language } = useLanguage();
 
   // Références pour les éléments des deux boutons
   const linkRef1 = useRef(null); // Premier bouton
@@ -88,7 +88,7 @@ const Contact = () => {
             }}>
             <div ref={pinkRef1} className="color"></div>
             <span className="whitetxt">
-              {lang === "en" ? "MY RESUME" : "MON CV"}
+              {language === "en" ? "MY RESUME" : "MON CV"}
             </span>
             <i className="fa-solid fa-arrow-right"></i>
           </button>
@@ -98,7 +98,7 @@ const Contact = () => {
             <button ref={linkRef2} className="link adlam">
               <div ref={pinkRef2} className="color"></div>
               <span className="whitetxt">
-                {lang === "en" ? "CONTACT ME" : "CONTACTEZ MOI"}
+                {language === "en" ? "CONTACT ME" : "CONTACTEZ MOI"}
               </span>
               <i className="fa-solid fa-arrow-right"></i>
             </button>

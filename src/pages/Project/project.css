@@ -44,6 +44,7 @@
   color: var(--primary-text);
   background-color: var(--primary-light);
   border: 2px solid var(--primary);
+  font-size: 0.8em;
 }
 
 .prjContainer img {

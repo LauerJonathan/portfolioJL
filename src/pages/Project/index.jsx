@@ -27,19 +27,18 @@ const Projects = () => {
           <div className="prjContainer">
             {prjList.map((elmt, index) => {
               return !elmt.folder ? (
-                <a
-                  href={elmt.link}
-                  target="_blank"
+                <Link
+                  to={`/project/${elmt.title}`}
                   key={index}
                   className="card">
                   <img
                     src={elmt.img}
                     alt="image du projet"
-                    className={elmt.folder && "objectSizer"}
+                    className={elmt.folder ? "objectSizer" : ""}
                   />
                   <div className="devtool flex column startX betY">
-                    <div>
-                      <h2 key={index}>{elmt.title}</h2>
+                    <div key={index}>
+                      <h2>{elmt.title}</h2>
                       <p>{elmt.description}</p>
                     </div>
                     <div>
@@ -50,7 +49,7 @@ const Projects = () => {
                       </ul>
                     </div>
                   </div>
-                </a>
+                </Link>
               ) : (
                 <Link to="../folder/backend" className="card">
                   <img

@@ -6,11 +6,11 @@ import { useLanguage } from "../../utils/context/LanguageContext";
 import { Link } from "react-router-dom";
 
 const LastDisplayer = () => {
-  const { lang } = useLanguage;
+  const { language } = useLanguage();
   return (
     <section className="lastDisplayerCont">
       <h1 className="adlam">
-        {lang === "en"
+        {language === "en"
           ? "Let's talk about ⸱⸱⸱ my lastest projects"
           : "Parlons de mes derniers projets"}
       </h1>
@@ -34,7 +34,7 @@ const LastDisplayer = () => {
       </div>
       <div className="seemore adlam">
         <Link to="./projects">
-          {lang === "en" ? "See more..." : "En voir plus..."}
+          {language === "en" ? "See more..." : "En voir plus..."}
         </Link>
       </div>
     </section>
