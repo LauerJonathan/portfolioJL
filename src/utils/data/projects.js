@@ -40,6 +40,26 @@ const projects = {
         "This folder contains all the fullstack and backend projects I have completed. From API development to data management, including front-end integration in fullstack projects.",
     },
     {
+      title: "IOS/Android App",
+      folder: true,
+      tags: [
+        "Fullstack / Backend",
+        "API Design",
+        "Data Management",
+        "Software Engineering",
+        "RESTful APIs",
+        "Node.js",
+        "Metro",
+        "xCode",
+        "React-Native",
+        "Project Management",
+      ],
+      img: folder,
+      link: "https://www.jonathanlauer.fr/folder/app",
+      description:
+        "This folder contains my React Native applications developed for both iOS and Android platforms. Each project demonstrates mobile development expertise using React Native and Expo framework.",
+    },
+    {
       title: "HosPharmacie",
       folder: false,
       tags: [
@@ -205,6 +225,26 @@ const projects = {
       link: "https://jonathanlauer.fr/folder/backend",
       description:
         "Ce dossier regroupe l'ensemble des projets fullstack et backend que j'ai réalisés. De la création d'API à la gestion des données, en passant par l'intégration front-end dans les projets fullstack.",
+    },
+    {
+      title: "IOS/Android App",
+      folder: true,
+      tags: [
+        "Fullstack / Backend",
+        "API Design",
+        "Data Management",
+        "Software Engineering",
+        "RESTful APIs",
+        "Node.js",
+        "Metro",
+        "xCode",
+        "React-Native",
+        "Project Management",
+      ],
+      img: folder,
+      link: "https://www.jonathanlauer.fr/folder/app",
+      description:
+        "This folder contains my React Native applications developed for both iOS and Android platforms. Each project demonstrates mobile development expertise using React Native and Expo framework.",
     },
     {
       title: "HosPharmacie",

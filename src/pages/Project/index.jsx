@@ -51,7 +51,7 @@ const Projects = () => {
                   </div>
                 </Link>
               ) : (
-                <Link to="../folder/backend" className="card">
+                <Link to={elmt.link} className="card">
                   <img
                     src={elmt.img}
                     alt="image du projet"

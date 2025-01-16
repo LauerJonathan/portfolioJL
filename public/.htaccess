@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /hosPharmacie/
+
+    # Ignorer les fichiers et dossiers existants (comme red.html, etc.)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Rediriger toutes les autres requêtes vers index.html
+    RewriteRule ^(.*)$ index.html [L]
+</IfModule>

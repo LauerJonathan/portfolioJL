@@ -1,4 +1,4 @@
-.folderCards {
+.folderCards.default {
   background-color: white;
   border-radius: 20px;
   padding: 10px;
@@ -9,11 +9,11 @@
   color: white;
   transition: 500ms;
 }
-.folderCards:hover {
+.folderCards.default:hover {
   transform: scale(1.1);
   transition: 500ms;
 }
-.folderCards h2 {
+.folderCards.default h2 {
   background-color: rgba(29, 22, 52, 0.6);
   backdrop-filter: blur(10px);
   border-radius: 10px 10px 0 0;
@@ -22,16 +22,16 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .folderCards {
+  .folderCards.default {
     min-width: calc(50% - 10px);
     min-height: calc(50vw * 0.9 - 10px);
   }
-  .folderCards h2 {
+  .folderCards.default h2 {
     font-size: 1em;
   }
 }
 
-.folderCards .typeDescription {
+.folderCards.default .typeDescription {
   width: 100%;
   background-color: rgba(29, 22, 52, 0.6);
   backdrop-filter: blur(10px);
@@ -42,16 +42,36 @@
   border-radius: 0 0 10px 10px;
 }
 
-.folderCards.backend {
+.folderCards.default.backend {
   background-image: url("../../assets/media/backendIMG.webp");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.folderCards.fullstack {
+.folderCards.default.fullstack {
   background-image: url("../../assets/media/fullstackIMG.webp");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.folderCards.app {
+  border-radius: 20px;
+  padding: 10px;
+  min-width: 270px;
+  min-height: 577px;
+  border: 5px solid #333;
+  text-decoration: none;
+  color: white;
+  transition: 500ms;
+  margin: 10px 10px;
+}
+
+.folderCards.app.MyBudget {
+  display: block;
+  background: url("../../assets/projects/myBudgetScreen.png");
+  background-size: "cover";
+  background-position: "center";
+  background-repeat: "no-repeat";
 }
